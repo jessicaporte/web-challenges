@@ -35,6 +35,7 @@ Hint: The z-index can also be negative!
   padding: 24px 32px;
   border-radius: 12px;
   position: relative;
+  z-index: 10;
 }
 
 .blob-1 {
