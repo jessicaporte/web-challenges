@@ -47,23 +47,31 @@ li {
 }
 
 .name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 12px;
   color: darkslategray;
+  margin: 6px 0;
+  display: none;
 }
 
 .location {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  text-align: end;
+  text-align: left;
   margin: 0;
+  color: darkslategray;
 }
 
+.user {
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 4px;
+}
 /*
   Part 1
 
