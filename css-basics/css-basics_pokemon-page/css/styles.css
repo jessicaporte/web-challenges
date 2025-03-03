@@ -5,23 +5,44 @@
 /* Task 1: First, we want to adjust how the size of our elements is calculated in CSS. Do you know how to switch from "content-box" to "border-box"? */
 
 /* Your solution */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
- {
+* {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
   background-color: LemonChiffon;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* ------- Headings Part 1 ------- */
+h1.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: blue;
+  line-height: 1.2;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+}
 
 /* Task 3: Setting the line height to 1.5 is good for texts, for accessibility reasons, but it seems too much for headings. Let's change this by giving our headings a line height of 1.2. */
-
 /* Your solution */
-
+h2 {
+  line-height: 1.2;
+}
 /* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
 - Change the background color to white
@@ -30,9 +51,7 @@
 - Center the text of the heading
 */
 
-.title {
-  /* Your solution */
-}
+/* Your solution */
 
 /* ------- Sections ------- */
 
@@ -44,10 +63,14 @@
 - Bonus:  The left border of the second section, which contains a list of favorite Pokémon, should have the color "gold". Hint: You may need a second CSS rule.
 */
 
-section {
+.subtitle {
+  padding: 20px;
+  border-left: 5px orange solid;
   /* Your solution */
 }
-
+.favourites {
+  border-left: 5px solid gold;
+}
 /* ------- Headings Part 2 ------- */
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
