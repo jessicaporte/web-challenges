@@ -1,0 +1,9 @@
+.border-footer {
+  border: 2px dotted black;
+  padding: 10px;
+  background-color: pink;
+}
+
+.border-footer:hover {
+  background-color: red;
+}
