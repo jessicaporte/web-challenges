@@ -143,6 +143,12 @@ body {
   width: 70%;
 }
 
+@media (min-width: 800px) {
+  .card-section {
+    background-color: pink;
+  }
+}
+
 .card-section {
   width: 100%;
   display: flex;
