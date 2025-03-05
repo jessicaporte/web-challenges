@@ -3,16 +3,19 @@
 *::after {
   box-sizing: border-box;
 }
-
+:root {
+  --color-granite: #ff4a11ff;
+  --color-violeta: #8336ff7b;
+  --color-blanco: #fff;
+}
 body {
-  margin: 0;
+  margin: 10px;
   font-family: system-ui;
   line-height: 1.2;
 }
 
 header {
   background: rgb(131 54 255/ 45%);
-  
 }
 
 h1 {
@@ -30,7 +33,7 @@ h2 {
 }
 
 strong {
-  color: #ff4a11;
+  color: var(--color-granite);
 }
 
 section {
@@ -48,9 +51,8 @@ article {
 
 img {
   max-width: 100%;
-  display: block;
+  border: 16px;
 }
-
 figure {
   width: min(100%, 400px);
   display: flex;
@@ -58,7 +60,7 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #ff4a11ff;
+  background-color: var(--color-granite);
   border-radius: 4px;
 }
 
@@ -78,23 +80,23 @@ a {
   padding: 8px;
   border-radius: 4px;
   background-color: hsl(14 100% 53%);
-  color: #fff;
+  color: var(--color-blanco);
 }
 
 a:hover,
 a:focus-visible {
-  background-color: #8336ff7b;
+  background-color: var(--color-violeta);
   text-decoration: none;
 }
 
 mark {
   background-color: rgb(255 74 17);
-  color: #ffffff;
+  color: var(--color-blanco);
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
 
 ::selection {
   background-color: #252629;
-  color: #ff4a11;
+  color: var(--color-granite);
 }
