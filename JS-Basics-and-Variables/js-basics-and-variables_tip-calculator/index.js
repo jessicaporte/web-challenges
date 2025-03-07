@@ -14,3 +14,22 @@ based on the cost of the meal and the percentage of the tip.
 
 4. Log a message to the console that includes the meal cost, tip amount, and total cost.
 */
+
+const mealCost = 36.8;
+const tipPercentage = 0.2;
+
+const tipAmount = mealCost * tipPercentage;
+
+//chequeo//
+console.log(tipAmount);
+
+const totalCost = tipAmount + mealCost;
+
+console.log(
+  "the meal cost is : " +
+    mealCost +
+    ", the tip amount is: " +
+    tipAmount +
+    "and the total cost is: " +
+    totalCost
+);
