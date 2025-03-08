@@ -1,6 +1,6 @@
 console.clear();
 
-const operand1 = 12;
+let operand1 = 12;
 const operand2 = 4;
 
 // ----- Mathematical Operations -----
@@ -30,7 +30,7 @@ divideButton.addEventListener("click", () => {
   console.log(`division:${operand1} / ${operand2} = ${result}`);
 });
 exponentButton.addEventListener("click", () => {
-  const result = operand1 ^ operand2;
+  const result = operand1 ** operand2;
   console.log(`Exponentiation:${operand1} ^ ${operand2} = ${result}`);
 });
 moduloButton.addEventListener("click", () => {
@@ -40,17 +40,50 @@ moduloButton.addEventListener("click", () => {
 
 // --^-- write your code here --^--
 
-/* 
-Step 2: Add event listeners for each mathematical operation:
-
-For each operation (add, subtract, multiply, divide, exponent, and modulo):
-1. Add an event listener to the corresponding button.
-2. Within the event listener, perform the operation using `operand1` and `operand2`.
-3. Store the result in a variable.
-4. Log the result to the console.
-*/
+//Step 2: Add event listeners for each mathematical operation:
 
 // --v-- write your code here --v--
+const increaseByOneButton = document.querySelector(
+  `[data-js="increase-by-one"]`
+);
+const increaseByFiveButton = document.querySelector(
+  `[data-js="increase-by-five"]`
+);
+const decreaseByOneButton = document.querySelector(
+  `[data-js="decrease-by-one"]`
+);
+const decreaseByFiveButton = document.querySelector(
+  `[data-js="decrease-by-five"]`
+);
+const multiplyByTwoButton = document.querySelector(
+  `[data-js="multiply-by-two"]`
+);
+const divideByTwoButton = document.querySelector(`[data-js="divide-by-two"]`);
+
+increaseByOneButton.addEventListener("click", () => {
+  operand1 += 1;
+  console.log(`operand1 increased by 1: ${operand1}`);
+});
+increaseByFiveButton.addEventListener("click", () => {
+  operand1 += 5;
+  console.log(`operand1 increased by 5: ${operand1}`);
+});
+decreaseByOneButton.addEventListener("click", () => {
+  operand1 -= 1;
+  console.log(`operand1 decreased by 1: ${operand1}`);
+});
+decreaseByFiveButton.addEventListener("click", () => {
+  operand1 -= 5;
+  console.log(`operand1 decreased by 5: ${operand1}`);
+});
+multiplyByTwoButton.addEventListener("click", () => {
+  operand1 *= 2;
+  console.log(`operand1 multiply by 2: ${operand1}`);
+});
+divideByTwoButton.addEventListener("click", () => {
+  operand1 /= 2;
+  console.log(`operand1 divided by 2: ${operand1}`);
+});
 
 // --^-- write your code here --^--
 
