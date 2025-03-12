@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <h1>create your personal pofile:</h1>
+      <p>we want to get to know you! please enter your personal information.</p>
+      <fieldset>
+        <legend>personal information</legend>
+        <label for="name"> Name:</label>
+        <input type="text" id="name" />
+        <label for="lastname"> Lastname:</label>
+        <input type="text" id=" lastname" />
+        <label for="birth"> Date of birth:</label>
+        <input type="date" id="birth" />
+      </fieldset>
+
+      <p>
+        can you tell us a little bit more? we want to annoy you with unwanted
+        ads.
+      </p>
+      <fieldset>
+        <legend>Futher information</legend>
+        <label for="color"> Favorite color: </label>
+        <input id="color" type="color" value="#ff0000" />
+        <label for="select-pet"> What is your favorite pet? </label>
+        <select id="select-pet" required>
+          <option value=" "></option>
+          <option value="four">student</option>
+          <option value="none">unemployed</option>
+          <option value="one">self-employed</option>
+          <option value="two">Gastronomy</option>
+          <option value="three">IT</option>
+        </select>
+      </fieldset>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
