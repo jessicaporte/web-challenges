@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
@@ -14,6 +13,7 @@ const initialEntries = [
     motto: "We are in a state of chaos",
     notes:
       "Today I learned about React State. It was fun! I can't wait to learn more.",
+    isFavorite: false,
   },
   {
     id: 999,
@@ -41,10 +41,12 @@ const initialEntries = [
 ];
 
 function App() {
-  const [entries, setEntries] = useState(initialEntries);
+  const [entries, setEntries] = useLocalStorageState("entries", {
+    defaultValue: initialEntries,
+  });
   const [filter, setFilter] = useLocalStorageState("filter", {
-    defaultValue: "",
-  }); // "all" or "favorites"
+    defaultValue: "favorites",
+  });
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
